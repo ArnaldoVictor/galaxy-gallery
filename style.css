@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --brand-color: #02799d;
+  --title-color: #e1e1e6;
+  --desc-color: #c4c4cc;
+  --bg-color: #121214;
+  --border-card-color: #323238;
+  --card-color: #202024;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  margin: auto;
+  padding-top: 4.56rem;
+  background: var(--bg-color);
+  padding-left: 6.25rem;
+  padding-right: 7.62rem;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  row-gap: 6.3rem;
+}
+
+header {
+  grid-column: 1/4;
+}
+
+header h1 {
+  color: var(--brand-color);
+  font-weight: 900;
+  font-size: 3.64rem;
+}
+
+header h2 {
+  color: var(--title-color);
+  font-weight: 600;
+  font-size: 2rem;
+}
+main {
+  display: grid;
+  grid-column: 1/4;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3.75rem;
+  row-gap: 2.75rem;
+}
+
+main h2 {
+  color: var(--title-color);
+  font-weight: 900;
+  font-size: 2.21rem;
+  margin-top: 1.53rem;
+}
+
+main p {
+  color: var(--desc-color);
+  font-weight: 600;
+  font-size: 1.21rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  border: 2px solid var(--border-card-color-);
+  background: var(--card-color);
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.desc-card {
+  padding-inline: 1.4rem;
+  padding-bottom: 2.4rem;
+}
+
+footer {
+  height: 72px;
+  grid-column: 1/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-size: 1.6rem;
+
+  color: var(--title-color);
+  font-weight: 600;
+}
